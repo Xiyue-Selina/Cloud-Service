@@ -151,7 +151,7 @@ class Cloud:
 
         
         if UniVar != []:
-            solver.add(Forall(UniVar, ReConstr))
+            solver.add(ForAll(UniVar, ReConstr))
         else:
             solver.add(ReConstr)
         
