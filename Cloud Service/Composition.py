@@ -18,9 +18,7 @@ class Composition:
 
     # Composition operations for cloud service
     def SeqComp(self, bound, nodesParam1, nodesParam2):
-
         if self.serv1.preCondition == self.serv2.preCondition == True:
-
             constraints = []
             for i in range(bound):
                 # index is used to indicate the node under specification when there are more than two output nodes
