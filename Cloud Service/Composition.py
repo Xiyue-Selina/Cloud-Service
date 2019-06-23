@@ -20,6 +20,7 @@ class Composition:
     def SeqComp(self, bound, nodesParam1, nodesParam2):
         if self.serv1.preCondition == self.serv2.preCondition == True:
             constraints = []
+            # index is used to indicate the node under specification when there are more than two output nodes
             for i in range(bound):                
                 constraints += [ nodesParam1[self.index]['data'][i] == nodesParam2[0]['data'][i] ] 
                 constraints += [ nodesParam1[self.index]['time'][i] == nodesParam2[0]['time'][i] ]
